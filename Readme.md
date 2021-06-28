@@ -1,4 +1,4 @@
-CardPass3
+CardFormat3
 ==========
 
-CardPass3 software.
+CardFormat3 software.
