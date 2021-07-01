@@ -1,5 +1,4 @@
 ﻿using CardFormat3.Controls;
-using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
 using System;
 using System.Drawing.Printing;
@@ -9,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CardFormat3
 {
-    public partial class FrmTest : MetroForm
+    public partial class FrmTest : Form
     {
 
         #region fields
@@ -398,6 +397,19 @@ namespace CardFormat3
                 }
             }
             catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn4K_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Mifare4k frm4k = new Mifare4k();
+                frm4k.ShowDialog();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

@@ -76,17 +76,18 @@
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnExit = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnEncode = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.imgHeader = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbKeyB = new System.Windows.Forms.RadioButton();
             this.rdbKeyA = new System.Windows.Forms.RadioButton();
             this.mhbKeyB = new CardFormat3.MaskedHexBox();
             this.mhbKeyA = new CardFormat3.MaskedHexBox();
             this.pnlSectorButtons = new System.Windows.Forms.Panel();
-            this.btnLoadData = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.btnSaveData = new Syncfusion.Windows.Forms.ButtonAdv();
             this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.imgHeader = new System.Windows.Forms.PictureBox();
+            this.btnLoadData = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnSaveData = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btn4K = new Syncfusion.Windows.Forms.ButtonAdv();
             ((System.ComponentModel.ISupportInitialize)(this.tabSectors)).BeginInit();
             this.tabSectors.SuspendLayout();
             this.tabSector0.SuspendLayout();
@@ -109,16 +110,20 @@
             this.pnlImpression.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.pnlButtons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeader)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnlSectorButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // tabSectors
             // 
             this.tabSectors.ActiveTabColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabSectors.ActiveTabForeColor = System.Drawing.Color.Empty;
             this.tabSectors.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabSectors.BeforeTouchSize = new System.Drawing.Size(429, 122);
+            this.tabSectors.CloseButtonForeColor = System.Drawing.Color.Empty;
+            this.tabSectors.CloseButtonHoverForeColor = System.Drawing.Color.Empty;
+            this.tabSectors.CloseButtonPressedForeColor = System.Drawing.Color.Empty;
             this.tabSectors.Controls.Add(this.tabSector0);
             this.tabSectors.Controls.Add(this.tabSector1);
             this.tabSectors.Controls.Add(this.tabSector2);
@@ -136,11 +141,13 @@
             this.tabSectors.Controls.Add(this.tabSector14);
             this.tabSectors.Controls.Add(this.tabSector15);
             this.tabSectors.FocusOnTabClick = false;
+            this.tabSectors.InActiveTabForeColor = System.Drawing.Color.Empty;
             this.tabSectors.Location = new System.Drawing.Point(9, 74);
             this.tabSectors.Name = "tabSectors";
+            this.tabSectors.SeparatorColor = System.Drawing.SystemColors.ControlDark;
+            this.tabSectors.ShowSeparator = false;
             this.tabSectors.Size = new System.Drawing.Size(429, 122);
             this.tabSectors.TabIndex = 0;
-            this.tabSectors.TabPanelBackColor = System.Drawing.SystemColors.Control;
             // 
             // tabSector0
             // 
@@ -610,6 +617,7 @@
             // pnlButtons
             // 
             this.pnlButtons.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlButtons.Controls.Add(this.btn4K);
             this.pnlButtons.Controls.Add(this.btnExit);
             this.pnlButtons.Controls.Add(this.btnEncode);
             this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -652,16 +660,6 @@
             this.btnEncode.UseVisualStyle = true;
             this.btnEncode.UseVisualStyleBackColor = true;
             this.btnEncode.Click += new System.EventHandler(this.btnEncode_Click);
-            // 
-            // imgHeader
-            // 
-            this.imgHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.imgHeader.Image = global::CardFormat3.Properties.Resources.cardformat3_banner;
-            this.imgHeader.Location = new System.Drawing.Point(3, 3);
-            this.imgHeader.Name = "imgHeader";
-            this.imgHeader.Size = new System.Drawing.Size(442, 65);
-            this.imgHeader.TabIndex = 4;
-            this.imgHeader.TabStop = false;
             // 
             // groupBox1
             // 
@@ -733,6 +731,27 @@
             this.pnlSectorButtons.Size = new System.Drawing.Size(442, 44);
             this.pnlSectorButtons.TabIndex = 6;
             // 
+            // dlgSaveFile
+            // 
+            this.dlgSaveFile.DefaultExt = "cf3";
+            this.dlgSaveFile.Filter = "CardFormat3 files|*.cf3";
+            // 
+            // dlgOpenFile
+            // 
+            this.dlgOpenFile.DefaultExt = "cf3";
+            this.dlgOpenFile.FileName = "openFileDialog1";
+            this.dlgOpenFile.Filter = "CardFormat3 files|*.cf3";
+            // 
+            // imgHeader
+            // 
+            this.imgHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.imgHeader.Image = global::CardFormat3.Properties.Resources.cardformat3_banner;
+            this.imgHeader.Location = new System.Drawing.Point(3, 3);
+            this.imgHeader.Name = "imgHeader";
+            this.imgHeader.Size = new System.Drawing.Size(442, 65);
+            this.imgHeader.TabIndex = 4;
+            this.imgHeader.TabStop = false;
+            // 
             // btnLoadData
             // 
             this.btnLoadData.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
@@ -769,24 +788,28 @@
             this.btnSaveData.UseVisualStyle = true;
             this.btnSaveData.Click += new System.EventHandler(this.btnSaveData_Click);
             // 
-            // dlgSaveFile
+            // btn4K
             // 
-            this.dlgSaveFile.DefaultExt = "cf3";
-            this.dlgSaveFile.Filter = "CardFormat3 files|*.cf3";
-            // 
-            // dlgOpenFile
-            // 
-            this.dlgOpenFile.DefaultExt = "cf3";
-            this.dlgOpenFile.FileName = "openFileDialog1";
-            this.dlgOpenFile.Filter = "CardFormat3 files|*.cf3";
+            this.btn4K.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn4K.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btn4K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+            this.btn4K.BeforeTouchSize = new System.Drawing.Size(91, 27);
+            this.btn4K.ForeColor = System.Drawing.Color.White;
+            this.btn4K.IsBackStageButton = false;
+            this.btn4K.Location = new System.Drawing.Point(3, 16);
+            this.btn4K.Name = "btn4K";
+            this.btn4K.Size = new System.Drawing.Size(91, 27);
+            this.btn4K.TabIndex = 9;
+            this.btn4K.Text = "4K";
+            this.btn4K.UseVisualStyle = true;
+            this.btn4K.UseVisualStyleBackColor = true;
+            this.btn4K.Click += new System.EventHandler(this.btn4K_Click);
             // 
             // FrmTest
             // 
             this.AcceptButton = this.btnEncode;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.btnExit;
-            this.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.CaptionFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientSize = new System.Drawing.Size(448, 503);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -818,10 +841,10 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.pnlButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgHeader)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.pnlSectorButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgHeader)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -885,9 +908,6 @@
         private Syncfusion.Windows.Forms.ButtonAdv btnSaveData;
         private System.Windows.Forms.SaveFileDialog dlgSaveFile;
         private System.Windows.Forms.OpenFileDialog dlgOpenFile;
-
-
-
-
+        private Syncfusion.Windows.Forms.ButtonAdv btn4K;
     }
 }

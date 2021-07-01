@@ -13,6 +13,7 @@ namespace CardFormat3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            var a = new FrmTest();
             Application.Run(new FrmTest());
         }
     }

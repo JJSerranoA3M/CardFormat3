@@ -42,14 +42,16 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.Shared.Base, Version=14.1450.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
-    <Reference Include="Syncfusion.Tools.Windows, Version=14.1450.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=15.2451.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=15.2451.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\Block.cs">
@@ -68,6 +70,12 @@
     <Compile Include="Controls\Sector.Designer.cs">
       <DependentUpon>Sector.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\sector4k.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\sector4k.Designer.cs">
+      <DependentUpon>sector4k.cs</DependentUpon>
+    </Compile>
     <Compile Include="Evolis.cs" />
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -76,6 +84,12 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Hiti.cs" />
+    <Compile Include="Mifare4k.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mifare4k.Designer.cs">
+      <DependentUpon>Mifare4k.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\Block.resx">
@@ -84,8 +98,14 @@
     <EmbeddedResource Include="Controls\Sector.resx">
       <DependentUpon>Sector.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\sector4k.resx">
+      <DependentUpon>sector4k.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mifare4k.resx">
+      <DependentUpon>Mifare4k.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
