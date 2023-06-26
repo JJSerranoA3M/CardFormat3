@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardFormat3", "CardFormat3\CardFormat3.csproj", "{9D4F62CC-EA39-4BBC-948F-BE908A4D592B}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CardFormat3_Setup", "CardFormat3_Setup\CardFormat3_Setup.vdproj", "{C86D3FB6-AC5C-4A25-80A9-B376509DAE29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardLibrary", "CardLib\CardLibrary.csproj", "{EF3D4514-ACFB-4C28-9CB8-D8CC1EFA4F18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGM4200Library", "LGM4200Library\LGM4200Library.csproj", "{80DB26BA-5255-4D4B-AED5-622BCEA0CC3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,14 @@ Global
 		{9D4F62CC-EA39-4BBC-948F-BE908A4D592B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C86D3FB6-AC5C-4A25-80A9-B376509DAE29}.Debug|Any CPU.ActiveCfg = Debug
 		{C86D3FB6-AC5C-4A25-80A9-B376509DAE29}.Release|Any CPU.ActiveCfg = Release
+		{EF3D4514-ACFB-4C28-9CB8-D8CC1EFA4F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3D4514-ACFB-4C28-9CB8-D8CC1EFA4F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3D4514-ACFB-4C28-9CB8-D8CC1EFA4F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3D4514-ACFB-4C28-9CB8-D8CC1EFA4F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80DB26BA-5255-4D4B-AED5-622BCEA0CC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DB26BA-5255-4D4B-AED5-622BCEA0CC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DB26BA-5255-4D4B-AED5-622BCEA0CC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DB26BA-5255-4D4B-AED5-622BCEA0CC3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

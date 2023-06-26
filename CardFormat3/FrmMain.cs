@@ -2,10 +2,14 @@
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
 using System;
+using System.Drawing.Drawing2D;
 using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using CardLibrary;
+using CardLibrary.Cards;
+using CardLibrary.Readers;
 
 namespace CardFormat3
 {
@@ -21,7 +25,32 @@ namespace CardFormat3
         private byte[] lastBytes = new byte[6];
         private const string FILE_NAME = "errors.txt";
         byte[] uid;
+
+        private readonly Lgm4200CardReader _cardReader = new Lgm4200CardReader();
+        private CardInfo _sci;
+        private CardMode _cardMode = CardMode.User;
         #endregion
+
+        public byte[] ReadPassword
+        {
+            get
+            {
+                //aqui vamos a transformar el password en byte
+                var b = new byte[6];
+                var s = mhbKeyA.Text.Replace(" ", string.Empty);
+                if (s.Length != 12)
+                {
+                    throw new Exception("Longitud de password errónea");
+                }
+
+                //hacemos el recorrido del array de texto de dos en dos caracteres para formar los bytes
+                for (var i = 0; i < s.Length; i += 2)
+                {
+                    b[i / 2] = Convert.ToByte(s.Substring(i, 2), 16);
+                }
+                return b;
+            }
+        }
 
         #region constructor
         public FrmTest()
@@ -31,6 +60,8 @@ namespace CardFormat3
         #endregion
 
         #region events
+
+        private enum CardMode { User, Master, AntiPassBack, AntiPassBackFree, Default, Emergency, EmergencyLocal }
         private void FrmTest_Load(object sender, System.EventArgs e)
         {
             loadPrinters();
@@ -97,7 +128,7 @@ namespace CardFormat3
                                 byte uidlen;
                                 uidlen = 4;
 
-                                rc = Evolis.Find(System.Convert.ToUInt16(want_protos), ref  card_proto, uid, ref  uidlen);
+                                rc = Evolis.Find(System.Convert.ToUInt16(want_protos), ref card_proto, uid, ref uidlen);
                                 System.Threading.Thread.Sleep(1500);
                                 if (rc == Evolis.MI_OK)
                                 {
@@ -112,7 +143,7 @@ namespace CardFormat3
                                         commandSend = codificacionEvolis.DoAction("\x1bSic\x0d", 40000, ref status);
                                         System.Threading.Thread.Sleep(1000);
 
-                                        rc = Evolis.Find(System.Convert.ToUInt16(want_protos), ref  card_proto, uid, ref  uidlen);
+                                        rc = Evolis.Find(System.Convert.ToUInt16(want_protos), ref card_proto, uid, ref uidlen);
                                         System.Threading.Thread.Sleep(1500);
 
                                         if (rc == Evolis.MI_OK)
@@ -344,7 +375,7 @@ namespace CardFormat3
                                 {
                                     Sector sector = this.Controls.Find("sector" + nSector, true).FirstOrDefault() as Sector;
 
-                                    CardFormat3.Controls.Block block = sector.getBlock(nBlock);
+                                    Block block = sector.getBlock(nBlock);
                                     string[] split = line.Split(new Char[] { ';' });
                                     block.MhbFirstBytes.importData(split[0]);
                                     block.MhbCentralBytes.importData(split[1]);
@@ -401,6 +432,71 @@ namespace CardFormat3
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private bool EncryptCard()
+        {
+            int nSector = 0;
+            foreach (TabPageAdv page in tabSectors.TabPages)
+            {
+                foreach (Sector sector in page.Controls.OfType<Sector>())
+                {
+                    for (int nBlock = 0; nBlock < 4; nBlock++)
+                    {
+                        Block block = sector.getBlock(nBlock);
+
+                        if (block.isDirty())
+                        {
+                            firstBytes = transformTextToBytes(block.MhbFirstBytes.Text);
+                            centralBytes = transformTextAccessToBytes(block.MhbCentralBytes.Text);
+                            lastBytes = transformTextToBytes(block.MhbLastBytes.Text);
+
+
+
+                            // byte keyAB = 0x00;
+                            byte[] data = new byte[16];
+                            byte[] keyA = ReadPassword;
+
+                            Array.Copy(firstBytes, 0, data, 0, 6);
+                            Array.Copy(centralBytes, 0, data, 6, 4);
+                            Array.Copy(lastBytes, 0, data, 10, 6);
+
+                            if (_cardReader.Open())
+                            {
+                                try
+                                {
+                                    _sci = _cardReader.ReadInfo();
+                                    if(_sci != null)
+                                        _cardReader.WriteBlock((Lgm4200CardInfo)_sci, (byte)nSector, (byte)nBlock, keyA, data);
+                                    
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(@"Tarjeta no encontrada");
+                                    _cardReader.Close();
+                                    return false;
+                                }
+                                _cardReader.Close();
+                            }
+                        }
+
+                    }
+                    nSector++;
+                }
+            }
+            return true;
+        }
+
+        private void BtnEncode1_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.WaitCursor;
+            _cardReader.Beep();
+            if (EncryptCard())
+                MessageBox.Show(@"Tarjeta codificada");
+            else
+                MessageBox.Show(@"Tarjeta no codificada");
+
+            Cursor = Cursors.Default;  
         }
     }
 }

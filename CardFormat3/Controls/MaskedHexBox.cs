@@ -152,7 +152,8 @@ namespace CardFormat3
         public void importData(string data)
         {
             saveOriginalTtext();
-            base.Text = data.Trim();
+            var datos = data.Substring(32);
+            base.Text = datos.Trim();
             this.Dirty = true;
             formatData();
         }

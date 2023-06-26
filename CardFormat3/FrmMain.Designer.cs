@@ -87,6 +87,7 @@
             this.btnSaveData = new Syncfusion.Windows.Forms.ButtonAdv();
             this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.BtnEncode1 = new Syncfusion.Windows.Forms.ButtonAdv();
             ((System.ComponentModel.ISupportInitialize)(this.tabSectors)).BeginInit();
             this.tabSectors.SuspendLayout();
             this.tabSector0.SuspendLayout();
@@ -117,8 +118,12 @@
             // tabSectors
             // 
             this.tabSectors.ActiveTabColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabSectors.ActiveTabForeColor = System.Drawing.Color.Empty;
             this.tabSectors.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabSectors.BeforeTouchSize = new System.Drawing.Size(429, 122);
+            this.tabSectors.CloseButtonForeColor = System.Drawing.Color.Empty;
+            this.tabSectors.CloseButtonHoverForeColor = System.Drawing.Color.Empty;
+            this.tabSectors.CloseButtonPressedForeColor = System.Drawing.Color.Empty;
             this.tabSectors.Controls.Add(this.tabSector0);
             this.tabSectors.Controls.Add(this.tabSector1);
             this.tabSectors.Controls.Add(this.tabSector2);
@@ -136,8 +141,11 @@
             this.tabSectors.Controls.Add(this.tabSector14);
             this.tabSectors.Controls.Add(this.tabSector15);
             this.tabSectors.FocusOnTabClick = false;
+            this.tabSectors.InActiveTabForeColor = System.Drawing.Color.Empty;
             this.tabSectors.Location = new System.Drawing.Point(9, 74);
             this.tabSectors.Name = "tabSectors";
+            this.tabSectors.SeparatorColor = System.Drawing.SystemColors.ControlDark;
+            this.tabSectors.ShowSeparator = false;
             this.tabSectors.Size = new System.Drawing.Size(429, 122);
             this.tabSectors.TabIndex = 0;
             this.tabSectors.TabPanelBackColor = System.Drawing.SystemColors.Control;
@@ -610,6 +618,7 @@
             // pnlButtons
             // 
             this.pnlButtons.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlButtons.Controls.Add(this.BtnEncode1);
             this.pnlButtons.Controls.Add(this.btnExit);
             this.pnlButtons.Controls.Add(this.btnEncode);
             this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -780,6 +789,23 @@
             this.dlgOpenFile.FileName = "openFileDialog1";
             this.dlgOpenFile.Filter = "CardFormat3 files|*.cf3";
             // 
+            // BtnEncode1
+            // 
+            this.BtnEncode1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnEncode1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.BtnEncode1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+            this.BtnEncode1.BeforeTouchSize = new System.Drawing.Size(91, 27);
+            this.BtnEncode1.ForeColor = System.Drawing.Color.White;
+            this.BtnEncode1.IsBackStageButton = false;
+            this.BtnEncode1.Location = new System.Drawing.Point(3, 16);
+            this.BtnEncode1.Name = "BtnEncode1";
+            this.BtnEncode1.Size = new System.Drawing.Size(91, 27);
+            this.BtnEncode1.TabIndex = 9;
+            this.BtnEncode1.Text = "Encode one";
+            this.BtnEncode1.UseVisualStyle = true;
+            this.BtnEncode1.UseVisualStyleBackColor = true;
+            this.BtnEncode1.Click += new System.EventHandler(this.BtnEncode1_Click);
+            // 
             // FrmTest
             // 
             this.AcceptButton = this.btnEncode;
@@ -885,9 +911,6 @@
         private Syncfusion.Windows.Forms.ButtonAdv btnSaveData;
         private System.Windows.Forms.SaveFileDialog dlgSaveFile;
         private System.Windows.Forms.OpenFileDialog dlgOpenFile;
-
-
-
-
+        private Syncfusion.Windows.Forms.ButtonAdv BtnEncode1;
     }
 }
