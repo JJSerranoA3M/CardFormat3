@@ -32,109 +32,109 @@
             this.btnExit = new Syncfusion.Windows.Forms.ButtonAdv();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.tabSector0 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector0 = new CardFormat3.Controls.Sector();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.tabSector1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector1 = new CardFormat3.Controls.Sector();
             this.cmbPrinters = new System.Windows.Forms.ComboBox();
             this.tabSector2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector2 = new CardFormat3.Controls.Sector();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnEncode = new Syncfusion.Windows.Forms.ButtonAdv();
             this.tabSector3 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector3 = new CardFormat3.Controls.Sector();
             this.cmbEncoder = new System.Windows.Forms.ComboBox();
             this.tabSector4 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4 = new CardFormat3.Controls.Sector();
             this.checkBoxSkipErrors = new System.Windows.Forms.CheckBox();
             this.tabSector5 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector5 = new CardFormat3.Controls.Sector();
             this.lblPrinter = new System.Windows.Forms.Label();
             this.tabSector6 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector6 = new CardFormat3.Controls.Sector();
             this.lblEncoder = new System.Windows.Forms.Label();
             this.pnlImpression = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tabSector7 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector7 = new CardFormat3.Controls.Sector();
             this.tabSector8 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector8 = new CardFormat3.Controls.Sector();
             this.tabSector9 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector9 = new CardFormat3.Controls.Sector();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbKeyB = new System.Windows.Forms.RadioButton();
             this.rdbKeyA = new System.Windows.Forms.RadioButton();
-            this.mhbKeyB = new CardFormat3.MaskedHexBox();
-            this.mhbKeyA = new CardFormat3.MaskedHexBox();
             this.tabSector10 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector10 = new CardFormat3.Controls.Sector();
             this.tabSector11 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector11 = new CardFormat3.Controls.Sector();
             this.tabSector12 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector12 = new CardFormat3.Controls.Sector();
             this.pnlSectorButtons = new System.Windows.Forms.Panel();
-            this.btnLoadData = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.btnSaveData = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.label1 = new System.Windows.Forms.Label();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
             this.tabSector13 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector13 = new CardFormat3.Controls.Sector();
             this.tabSectors = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabSector14 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector14 = new CardFormat3.Controls.Sector();
             this.tabSector15 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector15 = new CardFormat3.Controls.Sector();
             this.tabSector16 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector16 = new CardFormat3.Controls.Sector();
             this.tabSector17 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector17 = new CardFormat3.Controls.Sector();
             this.tabSector18 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector18 = new CardFormat3.Controls.Sector();
             this.tabSector19 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector19 = new CardFormat3.Controls.Sector();
             this.tabSector20 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector20 = new CardFormat3.Controls.Sector();
             this.tabSector21 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector21 = new CardFormat3.Controls.Sector();
             this.tabSector22 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector22 = new CardFormat3.Controls.Sector();
             this.tabSector23 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector23 = new CardFormat3.Controls.Sector();
             this.tabSector24 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector24 = new CardFormat3.Controls.Sector();
             this.tabSector25 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector25 = new CardFormat3.Controls.Sector();
             this.tabSector26 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector26 = new CardFormat3.Controls.Sector();
             this.tabSector27 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector27 = new CardFormat3.Controls.Sector();
             this.tabSector28 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector28 = new CardFormat3.Controls.Sector();
             this.tabSector29 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector29 = new CardFormat3.Controls.Sector();
             this.tabSector30 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector30 = new CardFormat3.Controls.Sector();
             this.tabSector31 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector31 = new CardFormat3.Controls.Sector();
             this.tabSector32 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k1 = new CardFormat3.Controls.sector4k();
             this.tabSector33 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k2 = new CardFormat3.Controls.sector4k();
             this.tabSector34 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k3 = new CardFormat3.Controls.sector4k();
             this.tabSector35 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k4 = new CardFormat3.Controls.sector4k();
             this.tabSector36 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k5 = new CardFormat3.Controls.sector4k();
             this.tabSector37 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k6 = new CardFormat3.Controls.sector4k();
             this.tabSector38 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k7 = new CardFormat3.Controls.sector4k();
             this.tabSector39 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sector4k8 = new CardFormat3.Controls.sector4k();
             this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.imgHeader = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnLoadData = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnSaveData = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.sector0 = new CardFormat3.Controls.Sector();
+            this.sector1 = new CardFormat3.Controls.Sector();
+            this.sector2 = new CardFormat3.Controls.Sector();
+            this.sector3 = new CardFormat3.Controls.Sector();
+            this.sector4 = new CardFormat3.Controls.Sector();
+            this.sector5 = new CardFormat3.Controls.Sector();
+            this.sector6 = new CardFormat3.Controls.Sector();
+            this.sector7 = new CardFormat3.Controls.Sector();
+            this.sector8 = new CardFormat3.Controls.Sector();
+            this.sector9 = new CardFormat3.Controls.Sector();
+            this.sector10 = new CardFormat3.Controls.Sector();
+            this.sector11 = new CardFormat3.Controls.Sector();
+            this.sector12 = new CardFormat3.Controls.Sector();
+            this.sector13 = new CardFormat3.Controls.Sector();
+            this.sector14 = new CardFormat3.Controls.Sector();
+            this.sector15 = new CardFormat3.Controls.Sector();
+            this.sector16 = new CardFormat3.Controls.Sector();
+            this.sector17 = new CardFormat3.Controls.Sector();
+            this.sector18 = new CardFormat3.Controls.Sector();
+            this.sector19 = new CardFormat3.Controls.Sector();
+            this.sector20 = new CardFormat3.Controls.Sector();
+            this.sector21 = new CardFormat3.Controls.Sector();
+            this.sector22 = new CardFormat3.Controls.Sector();
+            this.sector23 = new CardFormat3.Controls.Sector();
+            this.sector24 = new CardFormat3.Controls.Sector();
+            this.sector25 = new CardFormat3.Controls.Sector();
+            this.sector26 = new CardFormat3.Controls.Sector();
+            this.sector27 = new CardFormat3.Controls.Sector();
+            this.sector28 = new CardFormat3.Controls.Sector();
+            this.sector29 = new CardFormat3.Controls.Sector();
+            this.sector30 = new CardFormat3.Controls.Sector();
+            this.sector31 = new CardFormat3.Controls.Sector();
+            this.sectorMF4k1 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k2 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k3 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k4 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k5 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k6 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k7 = new CardFormat3.Controls.SectorMF4k();
+            this.sectorMF4k8 = new CardFormat3.Controls.SectorMF4k();
+            this.mhbKeyB = new CardFormat3.MaskedHexBox();
+            this.mhbKeyA = new CardFormat3.MaskedHexBox();
             this.tabSector0.SuspendLayout();
             this.tabSector1.SuspendLayout();
             this.tabSector2.SuspendLayout();
@@ -225,14 +225,6 @@
             this.tabSector0.Text = "Sector 0";
             this.tabSector0.ThemesEnabled = false;
             // 
-            // sector0
-            // 
-            this.sector0.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector0.Location = new System.Drawing.Point(3, 3);
-            this.sector0.Name = "sector0";
-            this.sector0.Size = new System.Drawing.Size(405, 400);
-            this.sector0.TabIndex = 0;
-            // 
             // lblQuantity
             // 
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -256,14 +248,6 @@
             this.tabSector1.Text = "Sector 1";
             this.tabSector1.ThemesEnabled = false;
             // 
-            // sector1
-            // 
-            this.sector1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector1.Location = new System.Drawing.Point(3, 3);
-            this.sector1.Name = "sector1";
-            this.sector1.Size = new System.Drawing.Size(405, 87);
-            this.sector1.TabIndex = 0;
-            // 
             // cmbPrinters
             // 
             this.cmbPrinters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -286,14 +270,6 @@
             this.tabSector2.TabIndex = 3;
             this.tabSector2.Text = "Sector 2";
             this.tabSector2.ThemesEnabled = false;
-            // 
-            // sector2
-            // 
-            this.sector2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector2.Location = new System.Drawing.Point(3, 3);
-            this.sector2.Name = "sector2";
-            this.sector2.Size = new System.Drawing.Size(405, 87);
-            this.sector2.TabIndex = 0;
             // 
             // pnlButtons
             // 
@@ -336,14 +312,6 @@
             this.tabSector3.Text = "Sector 3";
             this.tabSector3.ThemesEnabled = false;
             // 
-            // sector3
-            // 
-            this.sector3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector3.Location = new System.Drawing.Point(3, 3);
-            this.sector3.Name = "sector3";
-            this.sector3.Size = new System.Drawing.Size(405, 87);
-            this.sector3.TabIndex = 0;
-            // 
             // cmbEncoder
             // 
             this.cmbEncoder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -368,14 +336,6 @@
             this.tabSector4.TabIndex = 5;
             this.tabSector4.Text = "Sector 4";
             this.tabSector4.ThemesEnabled = false;
-            // 
-            // sector4
-            // 
-            this.sector4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector4.Location = new System.Drawing.Point(3, 3);
-            this.sector4.Name = "sector4";
-            this.sector4.Size = new System.Drawing.Size(405, 87);
-            this.sector4.TabIndex = 0;
             // 
             // checkBoxSkipErrors
             // 
@@ -403,14 +363,6 @@
             this.tabSector5.Text = "Sector 5";
             this.tabSector5.ThemesEnabled = false;
             // 
-            // sector5
-            // 
-            this.sector5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector5.Location = new System.Drawing.Point(3, 3);
-            this.sector5.Name = "sector5";
-            this.sector5.Size = new System.Drawing.Size(405, 87);
-            this.sector5.TabIndex = 0;
-            // 
             // lblPrinter
             // 
             this.lblPrinter.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -433,14 +385,6 @@
             this.tabSector6.TabIndex = 7;
             this.tabSector6.Text = "Sector 6";
             this.tabSector6.ThemesEnabled = false;
-            // 
-            // sector6
-            // 
-            this.sector6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector6.Location = new System.Drawing.Point(3, 3);
-            this.sector6.Name = "sector6";
-            this.sector6.Size = new System.Drawing.Size(405, 87);
-            this.sector6.TabIndex = 1;
             // 
             // lblEncoder
             // 
@@ -497,14 +441,6 @@
             this.tabSector7.Text = "Sector 7";
             this.tabSector7.ThemesEnabled = false;
             // 
-            // sector7
-            // 
-            this.sector7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector7.Location = new System.Drawing.Point(3, 3);
-            this.sector7.Name = "sector7";
-            this.sector7.Size = new System.Drawing.Size(405, 87);
-            this.sector7.TabIndex = 1;
-            // 
             // tabSector8
             // 
             this.tabSector8.Controls.Add(this.sector8);
@@ -518,14 +454,6 @@
             this.tabSector8.Text = "Sector 8";
             this.tabSector8.ThemesEnabled = false;
             // 
-            // sector8
-            // 
-            this.sector8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector8.Location = new System.Drawing.Point(3, 3);
-            this.sector8.Name = "sector8";
-            this.sector8.Size = new System.Drawing.Size(405, 87);
-            this.sector8.TabIndex = 1;
-            // 
             // tabSector9
             // 
             this.tabSector9.Controls.Add(this.sector9);
@@ -538,14 +466,6 @@
             this.tabSector9.TabIndex = 10;
             this.tabSector9.Text = "Sector 9";
             this.tabSector9.ThemesEnabled = false;
-            // 
-            // sector9
-            // 
-            this.sector9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector9.Location = new System.Drawing.Point(3, 3);
-            this.sector9.Name = "sector9";
-            this.sector9.Size = new System.Drawing.Size(405, 87);
-            this.sector9.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -583,30 +503,6 @@
             this.rdbKeyA.Text = "Key A:";
             this.rdbKeyA.UseVisualStyleBackColor = true;
             // 
-            // mhbKeyB
-            // 
-            this.mhbKeyB.Dirty = false;
-            this.mhbKeyB.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.mhbKeyB.Location = new System.Drawing.Point(302, 17);
-            this.mhbKeyB.Mask = "AA AA AA AA AA AA";
-            this.mhbKeyB.Name = "mhbKeyB";
-            this.mhbKeyB.Size = new System.Drawing.Size(131, 20);
-            this.mhbKeyB.TabIndex = 14;
-            this.mhbKeyB.Text = "FFFFFFFFFFFF";
-            this.mhbKeyB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // mhbKeyA
-            // 
-            this.mhbKeyA.Dirty = false;
-            this.mhbKeyA.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.mhbKeyA.Location = new System.Drawing.Point(73, 17);
-            this.mhbKeyA.Mask = "AA AA AA AA AA AA";
-            this.mhbKeyA.Name = "mhbKeyA";
-            this.mhbKeyA.Size = new System.Drawing.Size(131, 20);
-            this.mhbKeyA.TabIndex = 13;
-            this.mhbKeyA.Text = "FFFFFFFFFFFF";
-            this.mhbKeyA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // tabSector10
             // 
             this.tabSector10.Controls.Add(this.sector10);
@@ -619,14 +515,6 @@
             this.tabSector10.TabIndex = 11;
             this.tabSector10.Text = "Sector 10";
             this.tabSector10.ThemesEnabled = false;
-            // 
-            // sector10
-            // 
-            this.sector10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector10.Location = new System.Drawing.Point(3, 3);
-            this.sector10.Name = "sector10";
-            this.sector10.Size = new System.Drawing.Size(405, 87);
-            this.sector10.TabIndex = 1;
             // 
             // tabSector11
             // 
@@ -641,14 +529,6 @@
             this.tabSector11.Text = "Sector 11";
             this.tabSector11.ThemesEnabled = false;
             // 
-            // sector11
-            // 
-            this.sector11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector11.Location = new System.Drawing.Point(3, 3);
-            this.sector11.Name = "sector11";
-            this.sector11.Size = new System.Drawing.Size(405, 87);
-            this.sector11.TabIndex = 1;
-            // 
             // tabSector12
             // 
             this.tabSector12.Controls.Add(this.sector12);
@@ -662,14 +542,6 @@
             this.tabSector12.Text = "Sector 12";
             this.tabSector12.ThemesEnabled = false;
             // 
-            // sector12
-            // 
-            this.sector12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector12.Location = new System.Drawing.Point(3, 3);
-            this.sector12.Name = "sector12";
-            this.sector12.Size = new System.Drawing.Size(405, 87);
-            this.sector12.TabIndex = 1;
-            // 
             // pnlSectorButtons
             // 
             this.pnlSectorButtons.Controls.Add(this.label1);
@@ -681,39 +553,14 @@
             this.pnlSectorButtons.Size = new System.Drawing.Size(462, 44);
             this.pnlSectorButtons.TabIndex = 6;
             // 
-            // btnLoadData
+            // label1
             // 
-            this.btnLoadData.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.btnLoadData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.btnLoadData.BeforeTouchSize = new System.Drawing.Size(100, 32);
-            this.btnLoadData.ForeColor = System.Drawing.Color.White;
-            this.btnLoadData.Image = global::CardFormat3.Properties.Resources.table_import;
-            this.btnLoadData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoadData.IsBackStageButton = false;
-            this.btnLoadData.Location = new System.Drawing.Point(333, 6);
-            this.btnLoadData.Name = "btnLoadData";
-            this.btnLoadData.Size = new System.Drawing.Size(100, 32);
-            this.btnLoadData.TabIndex = 1;
-            this.btnLoadData.Text = "Load data";
-            this.btnLoadData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLoadData.UseVisualStyle = true;
-            // 
-            // btnSaveData
-            // 
-            this.btnSaveData.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.btnSaveData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.btnSaveData.BeforeTouchSize = new System.Drawing.Size(100, 32);
-            this.btnSaveData.ForeColor = System.Drawing.Color.White;
-            this.btnSaveData.Image = global::CardFormat3.Properties.Resources.table_export;
-            this.btnSaveData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveData.IsBackStageButton = false;
-            this.btnSaveData.Location = new System.Drawing.Point(227, 6);
-            this.btnSaveData.Name = "btnSaveData";
-            this.btnSaveData.Size = new System.Drawing.Size(100, 32);
-            this.btnSaveData.TabIndex = 0;
-            this.btnSaveData.Text = "Save data";
-            this.btnSaveData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaveData.UseVisualStyle = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(4, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
             // 
             // dlgOpenFile
             // 
@@ -733,14 +580,6 @@
             this.tabSector13.TabIndex = 14;
             this.tabSector13.Text = "Sector 13";
             this.tabSector13.ThemesEnabled = false;
-            // 
-            // sector13
-            // 
-            this.sector13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector13.Location = new System.Drawing.Point(3, 3);
-            this.sector13.Name = "sector13";
-            this.sector13.Size = new System.Drawing.Size(405, 87);
-            this.sector13.TabIndex = 1;
             // 
             // tabSectors
             // 
@@ -813,14 +652,6 @@
             this.tabSector14.Text = "Sector 14";
             this.tabSector14.ThemesEnabled = false;
             // 
-            // sector14
-            // 
-            this.sector14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector14.Location = new System.Drawing.Point(3, 3);
-            this.sector14.Name = "sector14";
-            this.sector14.Size = new System.Drawing.Size(405, 87);
-            this.sector14.TabIndex = 1;
-            // 
             // tabSector15
             // 
             this.tabSector15.Controls.Add(this.sector15);
@@ -833,14 +664,6 @@
             this.tabSector15.TabIndex = 16;
             this.tabSector15.Text = "Sector 15";
             this.tabSector15.ThemesEnabled = false;
-            // 
-            // sector15
-            // 
-            this.sector15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector15.Location = new System.Drawing.Point(3, 3);
-            this.sector15.Name = "sector15";
-            this.sector15.Size = new System.Drawing.Size(405, 87);
-            this.sector15.TabIndex = 1;
             // 
             // tabSector16
             // 
@@ -855,14 +678,6 @@
             this.tabSector16.Text = "Sector 16";
             this.tabSector16.ThemesEnabled = false;
             // 
-            // sector16
-            // 
-            this.sector16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector16.Location = new System.Drawing.Point(6, 3);
-            this.sector16.Name = "sector16";
-            this.sector16.Size = new System.Drawing.Size(405, 87);
-            this.sector16.TabIndex = 2;
-            // 
             // tabSector17
             // 
             this.tabSector17.Controls.Add(this.sector17);
@@ -875,14 +690,6 @@
             this.tabSector17.TabIndex = 18;
             this.tabSector17.Text = "Sector 17";
             this.tabSector17.ThemesEnabled = false;
-            // 
-            // sector17
-            // 
-            this.sector17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector17.Location = new System.Drawing.Point(6, 3);
-            this.sector17.Name = "sector17";
-            this.sector17.Size = new System.Drawing.Size(405, 87);
-            this.sector17.TabIndex = 2;
             // 
             // tabSector18
             // 
@@ -897,14 +704,6 @@
             this.tabSector18.Text = "Sector 18";
             this.tabSector18.ThemesEnabled = false;
             // 
-            // sector18
-            // 
-            this.sector18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector18.Location = new System.Drawing.Point(6, 3);
-            this.sector18.Name = "sector18";
-            this.sector18.Size = new System.Drawing.Size(405, 87);
-            this.sector18.TabIndex = 2;
-            // 
             // tabSector19
             // 
             this.tabSector19.Controls.Add(this.sector19);
@@ -917,14 +716,6 @@
             this.tabSector19.TabIndex = 20;
             this.tabSector19.Text = "Sector 19";
             this.tabSector19.ThemesEnabled = false;
-            // 
-            // sector19
-            // 
-            this.sector19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector19.Location = new System.Drawing.Point(3, 3);
-            this.sector19.Name = "sector19";
-            this.sector19.Size = new System.Drawing.Size(405, 87);
-            this.sector19.TabIndex = 2;
             // 
             // tabSector20
             // 
@@ -939,14 +730,6 @@
             this.tabSector20.Text = "sector 20";
             this.tabSector20.ThemesEnabled = false;
             // 
-            // sector20
-            // 
-            this.sector20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector20.Location = new System.Drawing.Point(3, 3);
-            this.sector20.Name = "sector20";
-            this.sector20.Size = new System.Drawing.Size(405, 87);
-            this.sector20.TabIndex = 2;
-            // 
             // tabSector21
             // 
             this.tabSector21.Controls.Add(this.sector21);
@@ -959,14 +742,6 @@
             this.tabSector21.TabIndex = 22;
             this.tabSector21.Text = "Sector 21";
             this.tabSector21.ThemesEnabled = false;
-            // 
-            // sector21
-            // 
-            this.sector21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector21.Location = new System.Drawing.Point(6, 3);
-            this.sector21.Name = "sector21";
-            this.sector21.Size = new System.Drawing.Size(405, 87);
-            this.sector21.TabIndex = 2;
             // 
             // tabSector22
             // 
@@ -981,14 +756,6 @@
             this.tabSector22.Text = "Sector 22";
             this.tabSector22.ThemesEnabled = false;
             // 
-            // sector22
-            // 
-            this.sector22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector22.Location = new System.Drawing.Point(3, 3);
-            this.sector22.Name = "sector22";
-            this.sector22.Size = new System.Drawing.Size(405, 87);
-            this.sector22.TabIndex = 2;
-            // 
             // tabSector23
             // 
             this.tabSector23.Controls.Add(this.sector23);
@@ -1001,14 +768,6 @@
             this.tabSector23.TabIndex = 24;
             this.tabSector23.Text = "Sector 23";
             this.tabSector23.ThemesEnabled = false;
-            // 
-            // sector23
-            // 
-            this.sector23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector23.Location = new System.Drawing.Point(3, 3);
-            this.sector23.Name = "sector23";
-            this.sector23.Size = new System.Drawing.Size(405, 87);
-            this.sector23.TabIndex = 2;
             // 
             // tabSector24
             // 
@@ -1023,14 +782,6 @@
             this.tabSector24.Text = "Sector 24";
             this.tabSector24.ThemesEnabled = false;
             // 
-            // sector24
-            // 
-            this.sector24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector24.Location = new System.Drawing.Point(3, 3);
-            this.sector24.Name = "sector24";
-            this.sector24.Size = new System.Drawing.Size(405, 87);
-            this.sector24.TabIndex = 2;
-            // 
             // tabSector25
             // 
             this.tabSector25.Controls.Add(this.sector25);
@@ -1043,14 +794,6 @@
             this.tabSector25.TabIndex = 26;
             this.tabSector25.Text = "Sector 25";
             this.tabSector25.ThemesEnabled = false;
-            // 
-            // sector25
-            // 
-            this.sector25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector25.Location = new System.Drawing.Point(3, 3);
-            this.sector25.Name = "sector25";
-            this.sector25.Size = new System.Drawing.Size(405, 87);
-            this.sector25.TabIndex = 2;
             // 
             // tabSector26
             // 
@@ -1065,14 +808,6 @@
             this.tabSector26.Text = "Sector26";
             this.tabSector26.ThemesEnabled = false;
             // 
-            // sector26
-            // 
-            this.sector26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector26.Location = new System.Drawing.Point(3, 3);
-            this.sector26.Name = "sector26";
-            this.sector26.Size = new System.Drawing.Size(405, 87);
-            this.sector26.TabIndex = 2;
-            // 
             // tabSector27
             // 
             this.tabSector27.Controls.Add(this.sector27);
@@ -1085,14 +820,6 @@
             this.tabSector27.TabIndex = 28;
             this.tabSector27.Text = "Sector 27";
             this.tabSector27.ThemesEnabled = false;
-            // 
-            // sector27
-            // 
-            this.sector27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector27.Location = new System.Drawing.Point(3, 3);
-            this.sector27.Name = "sector27";
-            this.sector27.Size = new System.Drawing.Size(405, 87);
-            this.sector27.TabIndex = 2;
             // 
             // tabSector28
             // 
@@ -1107,14 +834,6 @@
             this.tabSector28.Text = "Sector28";
             this.tabSector28.ThemesEnabled = false;
             // 
-            // sector28
-            // 
-            this.sector28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector28.Location = new System.Drawing.Point(3, 3);
-            this.sector28.Name = "sector28";
-            this.sector28.Size = new System.Drawing.Size(405, 87);
-            this.sector28.TabIndex = 2;
-            // 
             // tabSector29
             // 
             this.tabSector29.Controls.Add(this.sector29);
@@ -1127,14 +846,6 @@
             this.tabSector29.TabIndex = 30;
             this.tabSector29.Text = "Sector29";
             this.tabSector29.ThemesEnabled = false;
-            // 
-            // sector29
-            // 
-            this.sector29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector29.Location = new System.Drawing.Point(3, 3);
-            this.sector29.Name = "sector29";
-            this.sector29.Size = new System.Drawing.Size(405, 87);
-            this.sector29.TabIndex = 2;
             // 
             // tabSector30
             // 
@@ -1149,14 +860,6 @@
             this.tabSector30.Text = "Sector 30";
             this.tabSector30.ThemesEnabled = false;
             // 
-            // sector30
-            // 
-            this.sector30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector30.Location = new System.Drawing.Point(3, 3);
-            this.sector30.Name = "sector30";
-            this.sector30.Size = new System.Drawing.Size(405, 87);
-            this.sector30.TabIndex = 2;
-            // 
             // tabSector31
             // 
             this.tabSector31.Controls.Add(this.sector31);
@@ -1170,17 +873,9 @@
             this.tabSector31.Text = "Sector 31";
             this.tabSector31.ThemesEnabled = false;
             // 
-            // sector31
-            // 
-            this.sector31.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sector31.Location = new System.Drawing.Point(3, 3);
-            this.sector31.Name = "sector31";
-            this.sector31.Size = new System.Drawing.Size(405, 87);
-            this.sector31.TabIndex = 2;
-            // 
             // tabSector32
             // 
-            this.tabSector32.Controls.Add(this.sector4k1);
+            this.tabSector32.Controls.Add(this.sectorMF4k1);
             this.tabSector32.Image = null;
             this.tabSector32.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector32.Location = new System.Drawing.Point(1, 25);
@@ -1191,16 +886,9 @@
             this.tabSector32.Text = "Sector 32";
             this.tabSector32.ThemesEnabled = false;
             // 
-            // sector4k1
-            // 
-            this.sector4k1.Location = new System.Drawing.Point(4, 4);
-            this.sector4k1.Name = "sector4k1";
-            this.sector4k1.Size = new System.Drawing.Size(404, 361);
-            this.sector4k1.TabIndex = 0;
-            // 
             // tabSector33
             // 
-            this.tabSector33.Controls.Add(this.sector4k2);
+            this.tabSector33.Controls.Add(this.sectorMF4k2);
             this.tabSector33.Image = null;
             this.tabSector33.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector33.Location = new System.Drawing.Point(1, 25);
@@ -1211,16 +899,9 @@
             this.tabSector33.Text = "Sector 33";
             this.tabSector33.ThemesEnabled = false;
             // 
-            // sector4k2
-            // 
-            this.sector4k2.Location = new System.Drawing.Point(6, 4);
-            this.sector4k2.Name = "sector4k2";
-            this.sector4k2.Size = new System.Drawing.Size(404, 361);
-            this.sector4k2.TabIndex = 0;
-            // 
             // tabSector34
             // 
-            this.tabSector34.Controls.Add(this.sector4k3);
+            this.tabSector34.Controls.Add(this.sectorMF4k3);
             this.tabSector34.Image = null;
             this.tabSector34.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector34.Location = new System.Drawing.Point(1, 25);
@@ -1231,16 +912,9 @@
             this.tabSector34.Text = "Sector 34";
             this.tabSector34.ThemesEnabled = false;
             // 
-            // sector4k3
-            // 
-            this.sector4k3.Location = new System.Drawing.Point(4, 4);
-            this.sector4k3.Name = "sector4k3";
-            this.sector4k3.Size = new System.Drawing.Size(404, 361);
-            this.sector4k3.TabIndex = 0;
-            // 
             // tabSector35
             // 
-            this.tabSector35.Controls.Add(this.sector4k4);
+            this.tabSector35.Controls.Add(this.sectorMF4k4);
             this.tabSector35.Image = null;
             this.tabSector35.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector35.Location = new System.Drawing.Point(1, 25);
@@ -1251,16 +925,9 @@
             this.tabSector35.Text = "Sector 35";
             this.tabSector35.ThemesEnabled = false;
             // 
-            // sector4k4
-            // 
-            this.sector4k4.Location = new System.Drawing.Point(4, 4);
-            this.sector4k4.Name = "sector4k4";
-            this.sector4k4.Size = new System.Drawing.Size(404, 361);
-            this.sector4k4.TabIndex = 0;
-            // 
             // tabSector36
             // 
-            this.tabSector36.Controls.Add(this.sector4k5);
+            this.tabSector36.Controls.Add(this.sectorMF4k5);
             this.tabSector36.Image = null;
             this.tabSector36.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector36.Location = new System.Drawing.Point(1, 25);
@@ -1271,16 +938,9 @@
             this.tabSector36.Text = "Sector 36";
             this.tabSector36.ThemesEnabled = false;
             // 
-            // sector4k5
-            // 
-            this.sector4k5.Location = new System.Drawing.Point(6, 4);
-            this.sector4k5.Name = "sector4k5";
-            this.sector4k5.Size = new System.Drawing.Size(404, 361);
-            this.sector4k5.TabIndex = 0;
-            // 
             // tabSector37
             // 
-            this.tabSector37.Controls.Add(this.sector4k6);
+            this.tabSector37.Controls.Add(this.sectorMF4k6);
             this.tabSector37.Image = null;
             this.tabSector37.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector37.Location = new System.Drawing.Point(1, 25);
@@ -1291,16 +951,9 @@
             this.tabSector37.Text = "Sector 37";
             this.tabSector37.ThemesEnabled = false;
             // 
-            // sector4k6
-            // 
-            this.sector4k6.Location = new System.Drawing.Point(6, 4);
-            this.sector4k6.Name = "sector4k6";
-            this.sector4k6.Size = new System.Drawing.Size(404, 361);
-            this.sector4k6.TabIndex = 0;
-            // 
             // tabSector38
             // 
-            this.tabSector38.Controls.Add(this.sector4k7);
+            this.tabSector38.Controls.Add(this.sectorMF4k7);
             this.tabSector38.Image = null;
             this.tabSector38.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector38.Location = new System.Drawing.Point(1, 25);
@@ -1311,16 +964,9 @@
             this.tabSector38.Text = "Sector38";
             this.tabSector38.ThemesEnabled = false;
             // 
-            // sector4k7
-            // 
-            this.sector4k7.Location = new System.Drawing.Point(4, 4);
-            this.sector4k7.Name = "sector4k7";
-            this.sector4k7.Size = new System.Drawing.Size(404, 361);
-            this.sector4k7.TabIndex = 0;
-            // 
             // tabSector39
             // 
-            this.tabSector39.Controls.Add(this.sector4k8);
+            this.tabSector39.Controls.Add(this.sectorMF4k8);
             this.tabSector39.Image = null;
             this.tabSector39.ImageSize = new System.Drawing.Size(16, 16);
             this.tabSector39.Location = new System.Drawing.Point(1, 25);
@@ -1330,13 +976,6 @@
             this.tabSector39.TabIndex = 40;
             this.tabSector39.Text = "Sector39";
             this.tabSector39.ThemesEnabled = false;
-            // 
-            // sector4k8
-            // 
-            this.sector4k8.Location = new System.Drawing.Point(4, 4);
-            this.sector4k8.Name = "sector4k8";
-            this.sector4k8.Size = new System.Drawing.Size(404, 361);
-            this.sector4k8.TabIndex = 0;
             // 
             // dlgSaveFile
             // 
@@ -1376,14 +1015,375 @@
             this.imgHeader.TabIndex = 4;
             this.imgHeader.TabStop = false;
             // 
-            // label1
+            // btnLoadData
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.btnLoadData.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnLoadData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+            this.btnLoadData.BeforeTouchSize = new System.Drawing.Size(100, 32);
+            this.btnLoadData.ForeColor = System.Drawing.Color.White;
+            this.btnLoadData.Image = global::CardFormat3.Properties.Resources.table_import;
+            this.btnLoadData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoadData.IsBackStageButton = false;
+            this.btnLoadData.Location = new System.Drawing.Point(333, 6);
+            this.btnLoadData.Name = "btnLoadData";
+            this.btnLoadData.Size = new System.Drawing.Size(100, 32);
+            this.btnLoadData.TabIndex = 1;
+            this.btnLoadData.Text = "Load data";
+            this.btnLoadData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLoadData.UseVisualStyle = true;
+            // 
+            // btnSaveData
+            // 
+            this.btnSaveData.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnSaveData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+            this.btnSaveData.BeforeTouchSize = new System.Drawing.Size(100, 32);
+            this.btnSaveData.ForeColor = System.Drawing.Color.White;
+            this.btnSaveData.Image = global::CardFormat3.Properties.Resources.table_export;
+            this.btnSaveData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveData.IsBackStageButton = false;
+            this.btnSaveData.Location = new System.Drawing.Point(227, 6);
+            this.btnSaveData.Name = "btnSaveData";
+            this.btnSaveData.Size = new System.Drawing.Size(100, 32);
+            this.btnSaveData.TabIndex = 0;
+            this.btnSaveData.Text = "Save data";
+            this.btnSaveData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSaveData.UseVisualStyle = true;
+            // 
+            // sector0
+            // 
+            this.sector0.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector0.Location = new System.Drawing.Point(3, 3);
+            this.sector0.Name = "sector0";
+            this.sector0.Size = new System.Drawing.Size(405, 400);
+            this.sector0.TabIndex = 0;
+            // 
+            // sector1
+            // 
+            this.sector1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector1.Location = new System.Drawing.Point(3, 3);
+            this.sector1.Name = "sector1";
+            this.sector1.Size = new System.Drawing.Size(405, 87);
+            this.sector1.TabIndex = 0;
+            // 
+            // sector2
+            // 
+            this.sector2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector2.Location = new System.Drawing.Point(3, 3);
+            this.sector2.Name = "sector2";
+            this.sector2.Size = new System.Drawing.Size(405, 87);
+            this.sector2.TabIndex = 0;
+            // 
+            // sector3
+            // 
+            this.sector3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector3.Location = new System.Drawing.Point(3, 3);
+            this.sector3.Name = "sector3";
+            this.sector3.Size = new System.Drawing.Size(405, 87);
+            this.sector3.TabIndex = 0;
+            // 
+            // sector4
+            // 
+            this.sector4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector4.Location = new System.Drawing.Point(3, 3);
+            this.sector4.Name = "sector4";
+            this.sector4.Size = new System.Drawing.Size(405, 87);
+            this.sector4.TabIndex = 0;
+            // 
+            // sector5
+            // 
+            this.sector5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector5.Location = new System.Drawing.Point(3, 3);
+            this.sector5.Name = "sector5";
+            this.sector5.Size = new System.Drawing.Size(405, 87);
+            this.sector5.TabIndex = 0;
+            // 
+            // sector6
+            // 
+            this.sector6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector6.Location = new System.Drawing.Point(3, 3);
+            this.sector6.Name = "sector6";
+            this.sector6.Size = new System.Drawing.Size(405, 87);
+            this.sector6.TabIndex = 1;
+            // 
+            // sector7
+            // 
+            this.sector7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector7.Location = new System.Drawing.Point(3, 3);
+            this.sector7.Name = "sector7";
+            this.sector7.Size = new System.Drawing.Size(405, 87);
+            this.sector7.TabIndex = 1;
+            // 
+            // sector8
+            // 
+            this.sector8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector8.Location = new System.Drawing.Point(3, 3);
+            this.sector8.Name = "sector8";
+            this.sector8.Size = new System.Drawing.Size(405, 87);
+            this.sector8.TabIndex = 1;
+            // 
+            // sector9
+            // 
+            this.sector9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector9.Location = new System.Drawing.Point(3, 3);
+            this.sector9.Name = "sector9";
+            this.sector9.Size = new System.Drawing.Size(405, 87);
+            this.sector9.TabIndex = 1;
+            // 
+            // sector10
+            // 
+            this.sector10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector10.Location = new System.Drawing.Point(3, 3);
+            this.sector10.Name = "sector10";
+            this.sector10.Size = new System.Drawing.Size(405, 87);
+            this.sector10.TabIndex = 1;
+            // 
+            // sector11
+            // 
+            this.sector11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector11.Location = new System.Drawing.Point(3, 3);
+            this.sector11.Name = "sector11";
+            this.sector11.Size = new System.Drawing.Size(405, 87);
+            this.sector11.TabIndex = 1;
+            // 
+            // sector12
+            // 
+            this.sector12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector12.Location = new System.Drawing.Point(3, 3);
+            this.sector12.Name = "sector12";
+            this.sector12.Size = new System.Drawing.Size(405, 87);
+            this.sector12.TabIndex = 1;
+            // 
+            // sector13
+            // 
+            this.sector13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector13.Location = new System.Drawing.Point(3, 3);
+            this.sector13.Name = "sector13";
+            this.sector13.Size = new System.Drawing.Size(405, 87);
+            this.sector13.TabIndex = 1;
+            // 
+            // sector14
+            // 
+            this.sector14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector14.Location = new System.Drawing.Point(3, 3);
+            this.sector14.Name = "sector14";
+            this.sector14.Size = new System.Drawing.Size(405, 87);
+            this.sector14.TabIndex = 1;
+            // 
+            // sector15
+            // 
+            this.sector15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector15.Location = new System.Drawing.Point(3, 3);
+            this.sector15.Name = "sector15";
+            this.sector15.Size = new System.Drawing.Size(405, 87);
+            this.sector15.TabIndex = 1;
+            // 
+            // sector16
+            // 
+            this.sector16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector16.Location = new System.Drawing.Point(6, 3);
+            this.sector16.Name = "sector16";
+            this.sector16.Size = new System.Drawing.Size(405, 87);
+            this.sector16.TabIndex = 2;
+            // 
+            // sector17
+            // 
+            this.sector17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector17.Location = new System.Drawing.Point(6, 3);
+            this.sector17.Name = "sector17";
+            this.sector17.Size = new System.Drawing.Size(405, 87);
+            this.sector17.TabIndex = 2;
+            // 
+            // sector18
+            // 
+            this.sector18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector18.Location = new System.Drawing.Point(6, 3);
+            this.sector18.Name = "sector18";
+            this.sector18.Size = new System.Drawing.Size(405, 87);
+            this.sector18.TabIndex = 2;
+            // 
+            // sector19
+            // 
+            this.sector19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector19.Location = new System.Drawing.Point(3, 3);
+            this.sector19.Name = "sector19";
+            this.sector19.Size = new System.Drawing.Size(405, 87);
+            this.sector19.TabIndex = 2;
+            // 
+            // sector20
+            // 
+            this.sector20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector20.Location = new System.Drawing.Point(3, 3);
+            this.sector20.Name = "sector20";
+            this.sector20.Size = new System.Drawing.Size(405, 87);
+            this.sector20.TabIndex = 2;
+            // 
+            // sector21
+            // 
+            this.sector21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector21.Location = new System.Drawing.Point(6, 3);
+            this.sector21.Name = "sector21";
+            this.sector21.Size = new System.Drawing.Size(405, 87);
+            this.sector21.TabIndex = 2;
+            // 
+            // sector22
+            // 
+            this.sector22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector22.Location = new System.Drawing.Point(3, 3);
+            this.sector22.Name = "sector22";
+            this.sector22.Size = new System.Drawing.Size(405, 87);
+            this.sector22.TabIndex = 2;
+            // 
+            // sector23
+            // 
+            this.sector23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector23.Location = new System.Drawing.Point(3, 3);
+            this.sector23.Name = "sector23";
+            this.sector23.Size = new System.Drawing.Size(405, 87);
+            this.sector23.TabIndex = 2;
+            // 
+            // sector24
+            // 
+            this.sector24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector24.Location = new System.Drawing.Point(3, 3);
+            this.sector24.Name = "sector24";
+            this.sector24.Size = new System.Drawing.Size(405, 87);
+            this.sector24.TabIndex = 2;
+            // 
+            // sector25
+            // 
+            this.sector25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector25.Location = new System.Drawing.Point(3, 3);
+            this.sector25.Name = "sector25";
+            this.sector25.Size = new System.Drawing.Size(405, 87);
+            this.sector25.TabIndex = 2;
+            // 
+            // sector26
+            // 
+            this.sector26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector26.Location = new System.Drawing.Point(3, 3);
+            this.sector26.Name = "sector26";
+            this.sector26.Size = new System.Drawing.Size(405, 87);
+            this.sector26.TabIndex = 2;
+            // 
+            // sector27
+            // 
+            this.sector27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector27.Location = new System.Drawing.Point(3, 3);
+            this.sector27.Name = "sector27";
+            this.sector27.Size = new System.Drawing.Size(405, 87);
+            this.sector27.TabIndex = 2;
+            // 
+            // sector28
+            // 
+            this.sector28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector28.Location = new System.Drawing.Point(3, 3);
+            this.sector28.Name = "sector28";
+            this.sector28.Size = new System.Drawing.Size(405, 87);
+            this.sector28.TabIndex = 2;
+            // 
+            // sector29
+            // 
+            this.sector29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector29.Location = new System.Drawing.Point(3, 3);
+            this.sector29.Name = "sector29";
+            this.sector29.Size = new System.Drawing.Size(405, 87);
+            this.sector29.TabIndex = 2;
+            // 
+            // sector30
+            // 
+            this.sector30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector30.Location = new System.Drawing.Point(3, 3);
+            this.sector30.Name = "sector30";
+            this.sector30.Size = new System.Drawing.Size(405, 87);
+            this.sector30.TabIndex = 2;
+            // 
+            // sector31
+            // 
+            this.sector31.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sector31.Location = new System.Drawing.Point(3, 3);
+            this.sector31.Name = "sector31";
+            this.sector31.Size = new System.Drawing.Size(405, 87);
+            this.sector31.TabIndex = 2;
+            // 
+            // sectorMF4k1
+            // 
+            this.sectorMF4k1.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k1.Name = "sectorMF4k1";
+            this.sectorMF4k1.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k1.TabIndex = 0;
+            // 
+            // sectorMF4k2
+            // 
+            this.sectorMF4k2.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k2.Name = "sectorMF4k2";
+            this.sectorMF4k2.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k2.TabIndex = 0;
+            // 
+            // sectorMF4k3
+            // 
+            this.sectorMF4k3.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k3.Name = "sectorMF4k3";
+            this.sectorMF4k3.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k3.TabIndex = 0;
+            // 
+            // sectorMF4k4
+            // 
+            this.sectorMF4k4.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k4.Name = "sectorMF4k4";
+            this.sectorMF4k4.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k4.TabIndex = 0;
+            // 
+            // sectorMF4k5
+            // 
+            this.sectorMF4k5.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k5.Name = "sectorMF4k5";
+            this.sectorMF4k5.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k5.TabIndex = 0;
+            // 
+            // sectorMF4k6
+            // 
+            this.sectorMF4k6.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k6.Name = "sectorMF4k6";
+            this.sectorMF4k6.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k6.TabIndex = 0;
+            // 
+            // sectorMF4k7
+            // 
+            this.sectorMF4k7.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k7.Name = "sectorMF4k7";
+            this.sectorMF4k7.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k7.TabIndex = 0;
+            // 
+            // sectorMF4k8
+            // 
+            this.sectorMF4k8.Location = new System.Drawing.Point(3, 3);
+            this.sectorMF4k8.Name = "sectorMF4k8";
+            this.sectorMF4k8.Size = new System.Drawing.Size(405, 341);
+            this.sectorMF4k8.TabIndex = 0;
+            // 
+            // mhbKeyB
+            // 
+            this.mhbKeyB.Dirty = false;
+            this.mhbKeyB.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.mhbKeyB.Location = new System.Drawing.Point(302, 17);
+            this.mhbKeyB.Mask = "AA AA AA AA AA AA";
+            this.mhbKeyB.Name = "mhbKeyB";
+            this.mhbKeyB.Size = new System.Drawing.Size(131, 20);
+            this.mhbKeyB.TabIndex = 14;
+            this.mhbKeyB.Text = "FFFFFFFFFFFF";
+            this.mhbKeyB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // mhbKeyA
+            // 
+            this.mhbKeyA.Dirty = false;
+            this.mhbKeyA.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.mhbKeyA.Location = new System.Drawing.Point(73, 17);
+            this.mhbKeyA.Mask = "AA AA AA AA AA AA";
+            this.mhbKeyA.Name = "mhbKeyA";
+            this.mhbKeyA.Size = new System.Drawing.Size(131, 20);
+            this.mhbKeyA.TabIndex = 13;
+            this.mhbKeyA.Text = "FFFFFFFFFFFF";
+            this.mhbKeyA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Mifare4k
             // 
@@ -1549,14 +1549,14 @@
         private System.Windows.Forms.PictureBox imgHeader;
         private System.Windows.Forms.SaveFileDialog dlgSaveFile;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Controls.sector4k sector4k1;
-        private Controls.sector4k sector4k2;
-        private Controls.sector4k sector4k3;
-        private Controls.sector4k sector4k4;
-        private Controls.sector4k sector4k5;
-        private Controls.sector4k sector4k6;
-        private Controls.sector4k sector4k7;
-        private Controls.sector4k sector4k8;
         private System.Windows.Forms.Label label1;
+        private Controls.SectorMF4k sectorMF4k1;
+        private Controls.SectorMF4k sectorMF4k2;
+        private Controls.SectorMF4k sectorMF4k3;
+        private Controls.SectorMF4k sectorMF4k4;
+        private Controls.SectorMF4k sectorMF4k5;
+        private Controls.SectorMF4k sectorMF4k6;
+        private Controls.SectorMF4k sectorMF4k7;
+        private Controls.SectorMF4k sectorMF4k8;
     }
 }

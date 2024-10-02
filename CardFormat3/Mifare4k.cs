@@ -35,6 +35,7 @@ namespace CardFormat3
         private void btnEncode_Click(object sender, EventArgs e)
         {
             encodeCards();
+            //encodeSectorsForTest(0); 
         }
 
         private void Mifare4k_Load(object sender, EventArgs e)
@@ -143,6 +144,7 @@ namespace CardFormat3
         {
             try
             {
+                const int fromBlock31 = 128;
                 int nSector = 0;
                 foreach (TabPageAdv page in tabSectors.TabPages)
                 {
@@ -212,8 +214,8 @@ namespace CardFormat3
 
                         nSector++;
                     }
-                    label1.Text = "ACABO LOS PRIMEROS SECTORES";
-                    foreach (Controls.sector4k sector in page.Controls.OfType<Controls.sector4k>())
+                    //label1.Text = "ACABO LOS PRIMEROS SECTORES";
+                    foreach (Controls.SectorMF4k sector in page.Controls.OfType<Controls.SectorMF4k>())
                     {
                         if (nSector >= 32)
                         {
@@ -233,7 +235,7 @@ namespace CardFormat3
 
                                     if (cmbEncoder.Text.ToLower() == "evolis")
                                     {
-                                        rc = Evolis.MifStReadBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : (nSector * 16) + nBlock), data, defaultKey);
+                                        rc = Evolis.MifStReadBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : fromBlock31 + ((nSector - 32) * 16) + nBlock), data, defaultKey);
                                         System.Threading.Thread.Sleep(250);
 
                                         if (rc == Evolis.MI_OK)
@@ -242,13 +244,13 @@ namespace CardFormat3
                                             Array.Copy(centralBytes, 0, data, 6, 4);
                                             Array.Copy(lastBytes, 0, data, 10, 6);
 
-                                            rc = Evolis.MifStWriteBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : (nSector * 16) + nBlock), data, defaultKey);
+                                            rc = Evolis.MifStWriteBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : fromBlock31 + ((nSector - 32) * 16) + nBlock), data, defaultKey);
                                             System.Threading.Thread.Sleep(200);
                                             if (rc != Evolis.MI_OK)
                                             {
                                                 do
                                                 {
-                                                    rc = Evolis.MifStWriteBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : (nSector * 16) + nBlock), data, defaultKey);
+                                                    rc = Evolis.MifStWriteBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : fromBlock31 + ((nSector -32) * 16) + nBlock), data, defaultKey);
 
                                                 }
                                                 while (rc != Evolis.MI_OK && MessageBox.Show("Fallo al escribir la Tarjeta, ¿Reintentar?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes);
@@ -389,6 +391,157 @@ namespace CardFormat3
             }
 
         }
-        #endregion   
+        #endregion
+
+        #region Testing
+        private void encodeSectorsForTest(short rc)
+        {
+            const int fromBlock31 = 128;
+            try
+            {
+                int nSector = 0;
+                foreach (TabPageAdv page in tabSectors.TabPages)
+                {
+                    foreach (Controls.Sector sector in page.Controls.OfType<Controls.Sector>())
+                    {
+                        if (nSector < 32)
+                        {
+                            for (int nBlock = 0; nBlock < 4; nBlock++)
+                            {
+                                CardFormat3.Controls.Block block = sector.getBlock(nBlock);
+
+                                if (block.isDirty())
+                                {
+                                    firstBytes = transformTextToBytes(block.MhbFirstBytes.Text);
+                                    centralBytes = transformTextAccessToBytes(block.MhbCentralBytes.Text);
+                                    lastBytes = transformTextToBytes(block.MhbLastBytes.Text);
+
+                                    // byte keyAB = 0x00;
+                                    byte[] data = new byte[16];
+                                    //int result;
+
+                                    if (cmbEncoder.Text.ToLower() == "evolis")
+                                    {
+                                        rc = Evolis.MifStReadBlock(m4kSN, (byte)((nSector * 4) + nBlock), data, defaultKey);
+                                        System.Threading.Thread.Sleep(250);
+
+                                        if (rc == Evolis.MI_OK)
+                                        {
+                                            Array.Copy(firstBytes, 0, data, 0, 6);
+                                            Array.Copy(centralBytes, 0, data, 6, 4);
+                                            Array.Copy(lastBytes, 0, data, 10, 6);
+
+                                            rc = Evolis.MifStWriteBlock(m4kSN, (byte)((nSector * 4) + nBlock), data, defaultKey);
+                                            System.Threading.Thread.Sleep(200);
+                                            if (rc != Evolis.MI_OK)
+                                            {
+                                                do
+                                                {
+                                                    rc = Evolis.MifStWriteBlock(m4kSN, (byte)((nSector * 4) + nBlock), data, defaultKey);
+
+                                                }
+                                                while (rc != Evolis.MI_OK && MessageBox.Show("Fallo al escribir la Tarjeta, ¿Reintentar?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (!checkBoxSkipErrors.Checked)
+                                                MessageBox.Show("Fallo al leer la Tarjeta", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                            StreamWriter sw;
+                                            if (File.Exists(FILE_NAME))
+                                            {
+                                                sw = File.AppendText(FILE_NAME);
+                                            }
+                                            else
+                                            {
+                                                sw = File.CreateText(FILE_NAME);
+                                            }
+                                            sw.WriteLine("Error: " + rc.ToString() + " " + System.Text.Encoding.Default.GetString(uid));
+                                            sw.Flush();
+                                            sw.Close();
+                                        }
+                                    }
+                                }
+                                label1.Text = nSector.ToString();
+                            }
+                        }
+
+                        nSector++;
+                    }
+                    //label1.Text = "ACABO LOS PRIMEROS SECTORES";
+                    foreach (Controls.SectorMF4k sector in page.Controls.OfType<Controls.SectorMF4k>())
+                    {
+                        if (nSector >= 32)
+                        {
+                            for (int nBlock = 0; nBlock < 16; nBlock++)
+                            {
+                                CardFormat3.Controls.Block block = sector.getBlock(nBlock);
+                                label1.Text = nSector.ToString();
+                                if (block.isDirty())
+                                {
+                                    firstBytes = transformTextToBytes(block.MhbFirstBytes.Text);
+                                    centralBytes = transformTextAccessToBytes(block.MhbCentralBytes.Text);
+                                    lastBytes = transformTextToBytes(block.MhbLastBytes.Text);
+
+                                    // byte keyAB = 0x00;
+                                    byte[] data = new byte[16];
+                                    //int result;
+
+                                    if (cmbEncoder.Text.ToLower() == "evolis")
+                                    {
+                                        rc = Evolis.MifStReadBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : (fromBlock31 + (nSector - 32) * 16) + nBlock), data, defaultKey);
+                                        System.Threading.Thread.Sleep(250);
+
+                                        if (rc == Evolis.MI_OK)
+                                        {
+                                            Array.Copy(firstBytes, 0, data, 0, 6);
+                                            Array.Copy(centralBytes, 0, data, 6, 4);
+                                            Array.Copy(lastBytes, 0, data, 10, 6);
+
+                                            rc = Evolis.MifStWriteBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : (fromBlock31 + (nSector - 32) * 16) + nBlock), data, defaultKey);
+                                            System.Threading.Thread.Sleep(200);
+                                            if (rc != Evolis.MI_OK)
+                                            {
+                                                do
+                                                {
+                                                    rc = Evolis.MifStWriteBlock(m4kSN, (byte)(nSector < 32 ? (nSector * 4) + nBlock : (fromBlock31 + (nSector - 32) * 16) + nBlock), data, defaultKey);
+
+                                                }
+                                                while (rc != Evolis.MI_OK && MessageBox.Show("Fallo al escribir la Tarjeta, ¿Reintentar?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (!checkBoxSkipErrors.Checked)
+                                                MessageBox.Show("Fallo al leer la Tarjeta", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                            StreamWriter sw;
+                                            if (File.Exists(FILE_NAME))
+                                            {
+                                                sw = File.AppendText(FILE_NAME);
+                                            }
+                                            else
+                                            {
+                                                sw = File.CreateText(FILE_NAME);
+                                            }
+                                            sw.WriteLine("Error: " + rc.ToString() + " " + System.Text.Encoding.Default.GetString(uid));
+                                            sw.Flush();
+                                            sw.Close();
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        nSector++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        #endregion
     }
 }

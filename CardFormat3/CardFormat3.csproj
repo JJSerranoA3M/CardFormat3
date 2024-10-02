@@ -42,8 +42,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.Shared.Base, Version=15.2451.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
-    <Reference Include="Syncfusion.Tools.Windows, Version=15.2451.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=15.2400.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=15.2400.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -76,6 +76,12 @@
     <Compile Include="Controls\sector4k.Designer.cs">
       <DependentUpon>sector4k.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SectorMF4k.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SectorMF4k.Designer.cs">
+      <DependentUpon>SectorMF4k.cs</DependentUpon>
+    </Compile>
     <Compile Include="Evolis.cs" />
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\sector4k.resx">
       <DependentUpon>sector4k.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SectorMF4k.resx">
+      <DependentUpon>SectorMF4k.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
